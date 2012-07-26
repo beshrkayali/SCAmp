@@ -1,6 +1,6 @@
 SCAmp
 =====
-SCAmp is a SoundCloud Playlist Manager built with [AngularJS](http://angularjs.org) and uses [SoundCloud HTML5 Widget](http://developers.soundcloud.com/docs/api/html5-widget).
+SCAmp is a SoundCloud Playlist Manager that uses [AngularJS](http://angularjs.org) and [SoundCloud HTML5 Widget](http://developers.soundcloud.com/docs/api/html5-widget).
 
 SCAmp works in almost all modern browsers and supports localstorage save/load of playlists.
 
