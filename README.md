@@ -10,4 +10,4 @@ SCAmp works in almost all modern browsers and supports localstorage save/load of
 
 Licensing
 ---------
-PresentationTimetable is released under the MIT License.
+SCAmp is released under the MIT License.
