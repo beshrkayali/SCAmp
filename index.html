@@ -35,13 +35,13 @@
 		<section id="playlists">
 
 			<div class="container">
-				<a href="javascript:;" ng-click="selectPlaylist(playlist)" class="playlist {{playlist.selected}}" ng-repeat="playlist in playlists">{{playlist.name}}</a>
+				<a href=" " ng-click="selectPlaylist(playlist)" class="playlist {{playlist.selected}}" ng-repeat="playlist in playlists">{{playlist.name}}</a>
 				
 			</div>
 
 			<div class="actions">
 
-				<a href="javascript:;" onclick="$('#new-playlist-form').fadeIn(); $('#name').focus();">Create Playlist</a>
+				<a href=" " onclick="$('#new-playlist-form').fadeIn(); $('#name').focus();">Create Playlist</a>
 
 				<div class="form" id="new-playlist-form" style="display:none; background:#fff; float:none; padding:0 10px 0 10px;">
 					<form>
@@ -53,13 +53,13 @@
 						
 						<button ng-click="addPlaylist();">Save</button>
 
-						<a href="javascript:;" onclick="$('#new-playlist-form').fadeOut();" style="display:inline-block;">Cancel</a>
+						<a href=" " onclick="$('#new-playlist-form').fadeOut();" style="display:inline-block;">Cancel</a>
 					</form>
 				</div>
 
-				<a href="javascript:;" ng-click="saveLocalStorage()">Save to Localstorage</a>
+				<a href=" " ng-click="saveLocalStorage()">Save to Localstorage</a>
 				<br/><br/>
-				<a href="javascript:;" ng-click="resetSampleData()">Reset Sample Data</a>
+				<a href=" " ng-click="resetSampleData()">Reset Sample Data</a>
 
 			</div>
 
@@ -71,14 +71,14 @@
 			<div class="head">
 
 			<div class="actions">
-				<a href="javascript:;" ng-click="editPlaylistTitle();">Edit Playlist Name</a>
-				<a href="javascript:;" ng-click="editPlaylistDesc();">Edit Playlist Description</a>
-				<a href="javascript:;" ng-click="deletePlaylist();">Delete Playlist</a>
+				<a href=" " ng-click="editPlaylistTitle();">Edit Playlist Name</a>
+				<a href=" " ng-click="editPlaylistDesc();">Edit Playlist Description</a>
+				<a href=" " ng-click="deletePlaylist();">Delete Playlist</a>
 			</div>
 
 			<h1>{{getCurrentPlaylist().name}}</h1>
-			<a href="javascript:;" class="button" ng-click="playAllTracks();">Play All Tracks</a>
-			<a href="javascript:;" class="button" ng-click="skipTrack(getCurrentPlaylist());">Next Track</a>
+			<a href=" " class="button" ng-click="playAllTracks();">Play All Tracks</a>
+			<a href=" " class="button" ng-click="skipTrack(getCurrentPlaylist());">Next Track</a>
 			<div class="right">
 				<p class="playlist-description">{{getCurrentPlaylist().description}}</p>
 			</div>
@@ -86,15 +86,15 @@
 
 			<div class="playlist">
 				<ul>
-					<li ng-repeat="track in getCurrentPlaylist().tracks" class="track {{track.status}}" ng-model="track"><a href="javascript:;" ng-click="toggleTrack(track);" class="title">{{track.title}}</a><div class="right"><a href="javascript:;" class="play" ng-click="toggleTrack(track);">{{track.action}}</a> <a href="javascript:;" class="edit" ng-click="editTrack(track);">Edit</a> <a href="javascript:;" ng-click="deleteTrack(track);" class="delete" >Delete</a></div></li>
+					<li ng-repeat="track in getCurrentPlaylist().tracks" class="track {{track.status}}" ng-model="track"><a href=" " ng-click="toggleTrack(track);" class="title">{{track.title}}</a><div class="right"><a href=" " class="play" ng-click="toggleTrack(track);">{{track.action}}</a> <a href=" " class="edit" ng-click="editTrack(track);">Edit</a> <a href=" " ng-click="deleteTrack(track);" class="delete" >Delete</a></div></li>
 
 					<li>
-						<a href="javascript:;" onclick="$('#new-track-form').fadeIn(); $('#new-track-form input:first').focus()" class="button">New Track</a>
+						<a href=" " onclick="$('#new-track-form').fadeIn(); $('#new-track-form input:first').focus()" class="button">New Track</a>
 
 						<div id="new-track-form" class="form" style="display:none;">
 							<form>
 
-								<a href="javascript:;" class="closer" onclick="$('#new-track-form').fadeOut();">X</a>
+								<a href=" " class="closer" onclick="$('#new-track-form').fadeOut();">X</a>
 								<label for="title">Title</label>
 								<input type="text" id="title" ng-model="formTrackTitle" ng-model-instant maxlength="50">
 
@@ -140,5 +140,7 @@
 		<!-- SCAmp Scrips -->
 		<script src="js/scripts.js"></script>
 		<script src="js/scamp.js"></script>
+
+
 </body>
 </html>
